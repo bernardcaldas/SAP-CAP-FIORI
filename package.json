@@ -1,0 +1,40 @@
+{
+  "name": "sap-pm-portfolio",
+  "version": "1.0.0",
+  "description": "SAP Plant Maintenance Portfolio Project - CAP + Fiori + MCP",
+  "private": true,
+  "engines": {
+    "node": ">=18 <21",
+    "npm": ">=9"
+  },
+  "scripts": {
+    "dev": "cds watch",
+    "start": "cds run --production",
+    "build": "cds build --production",
+    "build:mtar": "mbt build -s . -p default -t mta_archives",
+    "deploy:cf": "cf deploy mta_archives/*.mtar",
+    "lint": "eslint . --ext .js,.ts,.cds",
+    "format": "prettier --write \"**/*.{js,ts,cds,json,md}\"",
+    "test": "jest",
+    "mcp-server": "node mcp-wrapper/server.js",
+    "postinstall": "cds compile",
+    "watch-sap-pm-maintenance": "cds watch --open sap-pm-maintenance/webapp/index.html?sap-ui-xx-viewCache=false"
+  },
+  "dependencies": {
+    "@sap/cds": "^8 || ^9",
+    "axios": "^1.6.0",
+    "express": "^4.21.2",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^2.0.2",
+    "@sap/cds-dk": "^8",
+    "eslint": "^8",
+    "jest": "^29",
+    "mbt": "^1",
+    "prettier": "^2"
+  },
+  "sapux": [
+    "app/sap-pm-maintenance"
+  ]
+}
