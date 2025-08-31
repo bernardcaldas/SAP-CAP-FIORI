@@ -5,33 +5,33 @@
 ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
 
 
-## Sobre o Projeto
+## About this project
 
-Este projeto é uma aplicação full-stack desenvolvida como portfólio, simulando um cenário de Manutenção de Planta (Plant Maintenance) utilizando o SAP Cloud Application Programming Model (CAP) e SAP Fiori Elements. O objetivo é demonstrar a criação de um aplicativo moderno no ecossistema SAP BTP, com foco em processos de negócios do módulo PM.
+This full-stack application serves as a portfolio piece, simulating a Plant Maintenance scenario using the SAP Cloud Application Programming Model (CAP) and SAP Fiori Elements. The goal is to demonstrate the creation of a modern application within the SAP BTP ecosystem, focusing on Plant Maintenance (PM) business processes.
 
-Além disso, o projeto inclui um wrapper MCP (Model Context Protocol), permitindo a exposição dos dados de manutenção para agentes de IA, facilitando a interação programática com os dados.
+Additionally, the project includes an MCP (Model Context Protocol) wrapper, allowing the exposure of maintenance data to AI agents, facilitating programmatic interaction with the data.
 
-✅ Funcionalidades
+✅ Features
 
-Visualização de Ordens de Manutenção: Interface intuitiva para exibição das ordens.
+- Maintenance Order Visualization: Intuitive interface for displaying orders.
 
-Filtragem por Prioridade e Status: Facilita a busca e organização das ordens.
+- Filtering by Priority and Status: Simplifies search and organization of orders.
 
-UI Moderna com Fiori Elements: Interface responsiva e alinhada aos padrões SAP Fiori.
+- Modern UI with Fiori Elements: Responsive interface aligned with SAP Fiori standards.
 
-Serviço OData V4 com CAP: Backend robusto e escalável.
+- OData V4 Service with CAP: Robust and scalable backend.
 
-Wrapper MCP para Integração com IA: Preparado para futuras integrações com inteligência artificial.
+- MCP Wrapper for AI Integration: Prepared for future integrations with artificial intelligence.
 
-🛠 Tecnologias Utilizadas
+🛠 Technologies Used
 
-SAP Cloud Application Programming (CAP): Framework para desenvolvimento de aplicações no SAP BTP.
+- SAP Cloud Application Programming (CAP): Framework for developing applications on SAP BTP.
 
-SAP Fiori Elements: Framework para criação de interfaces de usuário baseadas em padrões Fiori.
+- SAP Fiori Elements: Framework for creating user interfaces based on Fiori standards.
 
-Node.js: Ambiente de execução para o backend.
+- Node.js: Runtime environment for the backend.
 
-MCP Wrapper: Estrutura preparada para integração com APIs de modelos inteligentes.
+- MCP Wrapper: Structure prepared for integration with intelligent model APIs.
 
 ```
 SAP-CAP-FIORI/
@@ -43,6 +43,23 @@ SAP-CAP-FIORI/
 ├── srv/                # Serviços CAP
 
 ```
-## Demo Online
+🌐 Demo Online
 
-[Link para a demo online](https://seu-link-para-a-demo.com)
+Link 
+
+📈 Roadmap
+
+
+Integration with AI Models: Implementation of intelligent features.
+
+Creation of Interactive Dashboards: Advanced data visualization.
+
+Portfolio Expansion: Development of multiple SAP Fiori apps connected via CAP.
+
+🤝 Contributions
+
+Contributions are welcome! Feel free to open issues or pull requests for improvements, new features, or AI integration.
+
+📄 License
+
+MIT © Bernardo Caldas
