@@ -7,70 +7,42 @@
 
 ## Sobre o Projeto
 
-Este projeto é um portfólio que simula um cenário de Manutenção de Planta (Plant Maintenance) utilizando o SAP Cloud Application Programming Model (CAP) e Fiori Elements. O objetivo é demonstrar a criação de um aplicativo full-stack moderno no ecossistema SAP BTP, com foco em processos de negócios do módulo PM.
+Este projeto é uma aplicação full-stack desenvolvida como portfólio, simulando um cenário de Manutenção de Planta (Plant Maintenance) utilizando o SAP Cloud Application Programming Model (CAP) e SAP Fiori Elements. O objetivo é demonstrar a criação de um aplicativo moderno no ecossistema SAP BTP, com foco em processos de negócios do módulo PM.
 
-O projeto também inclui um wrapper MCP (Model Context Protocol) para expor os dados de manutenção para agentes de IA, permitindo a interação com os dados de forma programática.
+Além disso, o projeto inclui um wrapper MCP (Model Context Protocol), permitindo a exposição dos dados de manutenção para agentes de IA, facilitando a interação programática com os dados.
 
-## Funcionalidades
+✅ Funcionalidades
 
-- Visualização de Ordens de Manutenção
-- Filtragem de Ordens por prioridade e status
-- UI moderna com Fiori Elements
-- Serviço OData V4 com CAP
-- Wrapper MCP para integração com IA
+Visualização de Ordens de Manutenção: Interface intuitiva para exibição das ordens.
 
-## Pré-requisitos
+Filtragem por Prioridade e Status: Facilita a busca e organização das ordens.
 
-- [Node.js](https://nodejs.org/)
-- [SAP Cloud Application Programming Model (CAP)](https://cap.cloud.sap/)
-- [Conta no SAP BTP](https://www.sap.com/products/business-technology-platform.html)
+UI Moderna com Fiori Elements: Interface responsiva e alinhada aos padrões SAP Fiori.
 
-## Instalação
+Serviço OData V4 com CAP: Backend robusto e escalável.
 
-1. Clone o repositório:
+Wrapper MCP para Integração com IA: Preparado para futuras integrações com inteligência artificial.
 
-```bash
-git clone https://github.com/seu-usuario/sap-pm-portfolio.git
+🛠 Tecnologias Utilizadas
+
+SAP Cloud Application Programming (CAP): Framework para desenvolvimento de aplicações no SAP BTP.
+
+SAP Fiori Elements: Framework para criação de interfaces de usuário baseadas em padrões Fiori.
+
+Node.js: Ambiente de execução para o backend.
+
+MCP Wrapper: Estrutura preparada para integração com APIs de modelos inteligentes.
+
 ```
+SAP-CAP-FIORI/
+│
+├── app/                # Frontend Fiori
+├── db/                 # Banco de dados (CDS)
+├── docs/               # Documentação adicional
+├── mcp-wrapper/        # Integração com IA via MCP
+├── srv/                # Serviços CAP
 
-2. Instale as dependências:
-
-```bash
-npm install
 ```
-
-3. Inicie o servidor de desenvolvimento:
-
-```bash
-cds watch
-```
-
-## Screenshots
-
-_(Placeholder para screenshot da lista de ordens)_
-
-_(Placeholder para screenshot do detalhe da ordem)_
-
-## Deploy no SAP BTP
-
-1. Build do projeto:
-
-```bash
-cds build --production
-```
-
-2. Build do MTAR:
-
-```bash
-mbt build -s . -p default -t mta_archives
-```
-
-3. Deploy para o Cloud Foundry:
-
-```bash
-cf deploy mta_archives/*.mtar
-```
-
 ## Demo Online
 
 [Link para a demo online](https://seu-link-para-a-demo.com)
